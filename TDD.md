@@ -32,3 +32,11 @@
 * Moins de debug
 * Améliorations possibles
 
+
+
+## BDD Behaviour Driven Development
+Spécification par les exemples
+Expert métier, développeurs et testeurs définissent des exemples clés
+Les développeurs et testeurs automatisent celles-ci 
+Un non-développeur doit pouvoir comprendre les tests
+Souvent utilisé comme documentation

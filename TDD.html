@@ -8,7 +8,8 @@
 <div class="reveal">
     <div class="slides">
 
-        <section>Test Driven Development
+        <section>
+            <h1>Test Driven Development</h1>
             <p class="fragment" data-fragment-index="1">TDD</p>
         </section>
 
@@ -21,7 +22,7 @@
             <h3>Besoins</h3>
             <p class="fragment" data-fragment-index="1">Livrer frequemment</p>
             <p class="fragment" data-fragment-index="2">Bien tester avant livraison</p>
-            <p class="fragment" data-fragment-index="3">Code comprehensible</p>
+            <p class="fragment" data-fragment-index="3">Code utilisable</p>
         </section>
 
 
@@ -31,19 +32,80 @@
                 <p class="fragment" data-fragment-index="1">Test avant le code</p>
                 <p class="fragment" data-fragment-index="2">Tous les tests en amont du dev?</p>
                 <p class="fragment" data-fragment-index="3">Cycle TDD</p>
+                <img class="fragment" data-fragment-index="4" data-src="images/tdd_cycle.png"/>
             </section>
 
-            <section>Ecrire un test</section>
-            <section>Faire passer le test avec une solution naive</section>
-            <section>Remaniement du code (refactoring)</section>
+            <section>
+                <h3>Ecrire un test</h3>
+                <p class="fragment" data-fragment-index="1">Le code n'existe pas!</p>
+                <p class="fragment" data-fragment-index="1">Le code ne compile pas!</p>
+                <p class="fragment" data-fragment-index="1">Assertion en premier</p>
+                <p class="fragment" data-fragment-index="1">Coder par intention</p>
+            </section> <!-- bold sur un, ajouter rouge-->
+            <section>
+                <h3>Faire passer le test avec une solution naive</h3>
+                <p class="fragment" data-fragment-index="1">C'est OK d'&eacute;crire du code pas terrible</p>
+                <p class="fragment" data-fragment-index="2">Passer vite au vert</p> <!-- seule chose à optimiser-->
+
+            </section>
+            <section>
+                <h3>Remaniement du code (refactoring)</h3>
+                <p class="fragment" data-fragment-index="1">Rendre robuste</p>
+                <p class="fragment" data-fragment-index="2">Rendre lisible</p>
+                <p class="fragment" data-fragment-index="3">R&eacute;duire la duplication</p>
+                <p class="fragment" data-fragment-index="4">D&eacute;coupler</p>
+
+
+            </section>
+
+
+        </section>
+        <section>Vue d'ensemble dans le Cycle TDD</section>
+
+        <section>Compar&eacute; &agrave; Test Apr&egrave;s</section>
+
+        <section>
+            <section>Lien avec code utilisable</section>
+            <section>
+                <h3>Decouplage</h3>
+                <p>Pousse la cr&eacute;ation d&apos;interfaces/modules internes</p>
+
+            </section>
+            <section>
+                <h3>Filet de s&eacute;curit&eacute;</h3>
+                <p>Rend possible l&apos;am&eacute;lioration du code</p>
+            </section>
+            <section>
+                Exemples d'utilisation
+            </section>
+
         </section>
 
+        <section>
+            Un outil de Design
+        </section>
+
+        <section>
+            <h3>TDD sous format de carte</h3>
+            <iframe width="600" height="400" frameborder="0" src="https://www.mindmeister.com/maps/public_map_shell/762748839/tdd?width=600&height=400&z=auto" scrolling="no" style="overflow: hidden; margin-bottom: 5px;">Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/762748839/tdd" target="_blank">TDD</a> on MindMeister.</iframe><div style="margin-bottom: 5px"><a href="https://www.mindmeister.com/762748839/tdd" target="_blank">TDD</a> by <a href="https://www.mindmeister.com/users/channel/14308303" target="_blank">Johan Martinsson</a></div>
+
+            <a href="https://www.mindmeister.com/762748839/tdd">https://www.mindmeister.com/762748839/tdd</a>
+        </section>
+
+        <section>
+            <h3>BDD, Behaviour Driven Development</h3>
+            <p>Sp&eacute;cification par les exemples</p>
+            <p>Expert m&eacute;tier, d&eacute;veloppeurs et testeurs d&eacute;finissent des exemples cl&eacute;s</p>
+            <p>Les d&eacute;veloppeurs et testeurs automatisent celles-ci</p>
+            <p>Un non-d&eacute;veloppeur doit pouvoir comprendre les tests</p>
+            <p>Souvent utilis&eacute; comme documentation</p>
+        </section>
 
     </div>
 </div>
 <script src="js/reveal.js"></script>
 <script>
-    Reveal.initialize();
+    Reveal.initialize({slideNumber: "h/t"});
 </script>
 </body>
 </html>
