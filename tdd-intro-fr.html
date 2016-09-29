@@ -36,10 +36,13 @@
         <section>
             <section>
                 <div style="text-align: left"><h2>C'est quoi?</h2>
-                <p class="fragment" data-fragment-index="1">Test avant le code</p>
-                <p class="fragment" data-fragment-index="2">Tous les tests en amont du dev?</p>
-                <p class="fragment" data-fragment-index="3">Cycle TDD</p></div>
-                <div style="text-align: right; position: absolute; top: 20%; width: 100%;"><img class="fragment" data-fragment-index="4" data-src="images/tdd_cycle.png"/></div>
+                    <p class="fragment" data-fragment-index="1">Test avant le code</p>
+                    <p class="fragment" data-fragment-index="2">Tous les tests en amont du dev?</p>
+                    <p class="fragment" data-fragment-index="3">Cycle TDD</p></div>
+                <div style="text-align: right; position: absolute; top: 20%; width: 100%;"><img class="fragment"
+                                                                                                data-fragment-index="4"
+                                                                                                data-src="images/tdd_cycle.png"/>
+                </div>
             </section>
 
             <section>
@@ -49,14 +52,21 @@
                 <p class="fragment" data-fragment-index="2">Le code ne compile pas!</p>
                 <p class="fragment" data-fragment-index="3">Assertion en premier</p>
                 <p class="fragment" data-fragment-index="4">Coder par intention</p>
-                <div style="text-align: right; position: absolute; top: 20%; width: 100%;"><img class="fragment" data-fragment-index="1" data-src="images/tdd_cycle.png"/></div>
+                <div style="text-align: right; position: absolute; top: 20%; width: 100%;"><img class="fragment"
+                                                                                                data-fragment-index="1"
+                                                                                                data-src="images/tdd_cycle.png"/>
+                </div>
 
             </section> <!-- bold sur un, ajouter rouge-->
             <section>
-                <h2><span style="color: orangered">Faire passer le test</span> <span style="color: lawngreen">avec une solution naive</span></h2>
+                <h2><span style="color: orangered">Faire passer le test</span> <span style="color: lawngreen">avec une solution naive</span>
+                </h2>
                 <p class="fragment" data-fragment-index="1">C'est OK d'&eacute;crire du code pas terrible</p>
                 <p class="fragment" data-fragment-index="2">Passer vite au vert</p> <!-- seule chose à optimiser-->
-                <div style="text-align: right; position: absolute; top: 30%; width: 100%;"><img class="fragment" data-fragment-index="1" data-src="images/tdd_cycle.png"/></div>
+                <div style="text-align: right; position: absolute; top: 30%; width: 100%;"><img class="fragment"
+                                                                                                data-fragment-index="1"
+                                                                                                data-src="images/tdd_cycle.png"/>
+                </div>
 
             </section>
             <section>
@@ -65,7 +75,10 @@
                 <p class="fragment" data-fragment-index="2">Rendre lisible</p>
                 <p class="fragment" data-fragment-index="3">R&eacute;duire la duplication</p>
                 <p class="fragment" data-fragment-index="4">D&eacute;coupler</p>
-                <div style="text-align: right; position: absolute; top: 20%; width: 100%;"><img class="fragment" data-fragment-index="1" data-src="images/tdd_cycle.png"/></div>
+                <div style="text-align: right; position: absolute; top: 20%; width: 100%;"><img class="fragment"
+                                                                                                data-fragment-index="1"
+                                                                                                data-src="images/tdd_cycle.png"/>
+                </div>
             </section>
 
 
@@ -93,9 +106,21 @@
         </section>
 
         <section>
-            <h2>Un outil de Design</h2>
-            <p class="fragment"  data-fragment-index="1"><blockquote >The tests are a canary in coal mining revealing by their distress the presence of evil design vapors</blockquote> - Kent Beck</p>
-            <p class="fragment"  data-fragment-index="2"><blockquote >Sometimes we find it difficult to write a test ...  this usually means that our design can be improved</blockquote> - S. Freeman, N. Pryce</p>
+            <section>
+                <h2>Un outil de Design</h2>
+                <p class="fragment" data-fragment-index="1">
+                <blockquote>The tests are a canary in coal mining revealing by their distress the presence of evil
+                    design vapors
+                </blockquote>
+                - Kent Beck</p>
+                <p class="fragment" data-fragment-index="2">
+                <blockquote>Sometimes we find it difficult to write a test ... this usually means that our design can be
+                    improved
+                </blockquote>
+                - S. Freeman, N. Pryce</p>
+            </section>
+            <section><h2>Douleur</h2></section>
+            <section data-background-image="images/ultimate-crying.jpg"></section>
 
         </section>
 
@@ -114,14 +139,29 @@
         </section>
 
         <section>
-            <h2>BDD, Behaviour Driven Development</h2>
-            <p>Sp&eacute;cification par les exemples</p>
-            <p>Expert m&eacute;tier, d&eacute;veloppeurs et testeurs d&eacute;finissent des exemples cl&eacute;s</p>
-            <p>Les d&eacute;veloppeurs et testeurs automatisent celles-ci</p>
-            <p>Un non-d&eacute;veloppeur doit pouvoir comprendre les tests</p>
-            <p>Souvent utilis&eacute; comme documentation</p>
+            <section>
+                <h2>BDD, Behavior Driven Development</h2>
+                <p>Sp&eacute;cification par les exemples</p>
+                <p>Expert m&eacute;tier, d&eacute;veloppeurs et testeurs d&eacute;finissent des exemples cl&eacute;s</p>
+                <p>Les d&eacute;veloppeurs et testeurs automatisent celles-ci</p>
+                <p>Un non-d&eacute;veloppeur doit pouvoir comprendre les tests</p>
+                <p>Souvent utilis&eacute; comme documentation</p>
+            </section>
+            <section >
+                <img data-src="images/BDD-Workflow.png" style="height: 200%; width: 200%"/>
+            </section>
+            <section>
+                <h2>Cucumber par exemple</h2>
+                <pre>
+                    <code data-trim data-noescape>
+                        Scenario: eat 5 out of 12
+                        Given there are 12 cucumbers
+                        When I eat 5 cucumbers
+                        Then I should have 7 cucumbers
+                    </code>
+                </pre>
+            </section>
         </section>
-
         <section>
             <p>Scannez pour avoir les slides</p>
             <img src="images/qrcode.svg">
