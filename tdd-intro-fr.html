@@ -3,6 +3,12 @@
 <head>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/night.css">
+
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+
 </head>
 <body>
 <div class="reveal">
@@ -59,7 +65,7 @@
 
             </section> <!-- bold sur un, ajouter rouge-->
             <section>
-                <h2><span style="color: lawngreen">Faire passer le test</span> </h2>
+                <h2><span style="color: lawngreen">Faire passer le test</span></h2>
                 <p class="fragment" data-fragment-index="1">C'est OK d'&eacute;crire du code pas terrible</p>
                 <p class="fragment" data-fragment-index="2">Passer vite au vert</p> <!-- seule chose à optimiser-->
                 <div style="text-align: right; position: absolute; top: 30%; width: 100%;"><img class="fragment"
@@ -146,7 +152,7 @@
                 <p>Un non-d&eacute;veloppeur doit pouvoir comprendre les tests</p>
                 <p>Souvent utilis&eacute; comme documentation</p>
             </section>
-            <section >
+            <section>
                 <img data-src="images/BDD-Workflow.png" style="height: 200%; width: 200%"/>
             </section>
             <section>
@@ -167,10 +173,29 @@
         </section>
 
     </div>
+
+    <script src="lib/js/head.min.js"></script>
+
+
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            slideNumber: "h/t",
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            dependencies: [
+//            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+//            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//            { src: 'plugin/zoom-js/zoom.js', async: true },
+                {src: 'plugin/notes/notes.js', async: true}
+            ]
+        });
+    </script>
 </div>
-<script src="js/reveal.js"></script>
-<script>
-    Reveal.initialize({slideNumber: "h/t"});
-</script>
+
 </body>
 </html>
