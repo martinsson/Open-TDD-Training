@@ -8,7 +8,9 @@
 ---
 # Test legacy
 - Ne pas toucher du code non testé
--- Si on doit toucher pour rendre testable: Uniquement refactorings automatiques: "extract method and override" et "introduce parameter"
+- Si on doit toucher pour rendre testable: Uniquement refactorings automatiques: 
+  - "extract method and override" 
+  - "introduce parameter"
 - Commencer à tester par la gauche
 - Utiliser la couverture de test pour vérifier qu’on teste bien la branche qu’on pensait
 
